@@ -30,8 +30,8 @@ def credit_history(x):
         return x[0] + int(x[3])
 
 st.title('Credit Score Classifier')
-#data=pd.read_csv(r'data\df.csv')
-#data=data.drop(columns='Unnamed: 0')
+data=pd.read_csv(r'data\df.csv')
+data=data.drop(columns='Unnamed: 0')
 model=joblib.load('pipeline1.pkl')
 
 col1,col2=st.columns(2)
